@@ -1,0 +1,36 @@
+/* Universal Setting - Global Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* 10px/16px = .625  16 is assumed base*/ 
+    // Defines what 1 rem is
+    font-size: 62.5%; // 10px
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: $color-white;
+// }

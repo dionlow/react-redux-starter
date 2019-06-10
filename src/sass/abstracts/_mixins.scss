@@ -1,0 +1,16 @@
+// Clears formatting for float/height = 0 error
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Must set a position relative on parent element
+@mixin center-horizontal-vertical {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
